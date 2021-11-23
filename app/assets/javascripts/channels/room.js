@@ -1,3 +1,4 @@
+
 App.room = App.cable.subscriptions.create("RoomChannel", {
   connected: function() {
 
@@ -32,5 +33,6 @@ submit_message = function() {
 };
 
 scroll_bottom = function() {
-  $('#messages').scrollTop($('#messages')[0].scrolllHeight);
+  let height = $('#messages')[0].scrollHeight
+  $('#messages').scrollTop(height);
 };
