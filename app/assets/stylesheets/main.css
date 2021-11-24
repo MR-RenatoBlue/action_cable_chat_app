@@ -94,7 +94,18 @@ a {
     transform: translateY(-2000px);
   }
 }
-
+@keyframes fadeOutUpBig {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+}
 .header {
   margin-bottom: 30px;
   padding: 10px 20px;
