@@ -1,0 +1,370 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  border: 0;
+  font-family: helvetica, sans;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  background-color: #fcfaf5;
+  -webkit-box-shadow: 0 0 0 20px #7292b0 inset;
+          box-shadow: 0 0 0 20px #7292b0 inset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100%;
+  padding: 20px;
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.alert {
+  background-color: #7292b0;
+  color: #fcfaf5;
+  font-size: 12px;
+  padding: 0 20px 20px;
+  width: 100%;
+}
+
+.animatedDelay {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    max-height: 50px;
+  }
+  50% {
+    max-height: 0;
+    padding: 0 40px;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    padding: 0 40px;
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    max-height: 50px;
+  }
+  50% {
+    max-height: 0;
+    padding: 0 40px;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    padding: 0 40px;
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+@-webkit-keyframes fadeOutUpBig {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+}
+
+.header {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.header-logo {
+  background-color: #7292b0;
+  left: -20px;
+  padding: 15px 16px 9px;
+  position: absolute;
+  top: -20px;
+}
+
+.header-logo:hover svg {
+  stroke: #eeaf3a;
+}
+
+.header-logo svg {
+  stroke: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 40px;
+}
+
+.st0 {
+  fill: none;
+  stroke-width: 10;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: none;
+  stroke-width: 5;
+  stroke-linejoin: bevel;
+  stroke-miterlimit: 10;
+}
+
+.header-nav {
+  float: right;
+}
+
+.header-nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+.header-nav a {
+  -webkit-box-shadow: 0 -1px 0 0 rgba(114, 146, 176, 0.3) inset, 0 2px 0 0 rgba(114, 146, 176, 0.3);
+          box-shadow: 0 -1px 0 0 rgba(114, 146, 176, 0.3) inset, 0 2px 0 0 rgba(114, 146, 176, 0.3);
+  color: #7292b0;
+  font-size: 10px;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-nav a:hover {
+  color: #e67642;
+  -webkit-box-shadow: 0 -1px 0 0 rgba(230, 118, 66, 0.3) inset, 0 2px 0 0 rgba(230, 118, 66, 0.3);
+          box-shadow: 0 -1px 0 0 rgba(230, 118, 66, 0.3) inset, 0 2px 0 0 rgba(230, 118, 66, 0.3);
+}
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  color: #999;
+  font-family: helvetica, sans;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 14px 10px;
+}
+
+textarea:focus,
+select:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus {
+  color: #000;
+  -webkit-box-shadow: 0 3px 0 0 #eeaf3a inset;
+          box-shadow: 0 3px 0 0 #eeaf3a inset;
+}
+
+button, input[type="submit"] {
+  background-color: #7292b0;
+  border: 0;
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fcfaf5;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  padding: 12px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #eeaf3a;
+}
+
+button:active, input[type="submit"]:active {
+  background-color: #333;
+}
+
+.dialog {
+  background-color: #4b6680;
+  border: 10px solid #7292b0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 5vh auto 0;
+  padding: 40px;
+  width: 500px;
+}
+
+.dialog h1 {
+  color: #fcfaf5;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dialog label {
+  color: #fcfaf5;
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.dialog label ~ label {
+  margin-top: 30px;
+}
+
+.dialog input:not([type="submit"]) {
+  width: 100%;
+}
+
+.dialog input[type="submit"] {
+  display: block;
+  margin: 40px auto 0;
+  width: 150px;
+}
+
+.session-links {
+  color: #fcfaf5;
+  margin-top: 50px;
+}
+
+.session-links li {
+  font-size: 12px;
+  list-style: none;
+}
+
+.session-links li ~ li {
+  margin-top: 5px;
+}
+
+.session-links a {
+  -webkit-box-shadow: 0 -1px 0 0 rgba(252, 250, 245, 0.3) inset, 0 2px 0 0 rgba(252, 250, 245, 0.3);
+          box-shadow: 0 -1px 0 0 rgba(252, 250, 245, 0.3) inset, 0 2px 0 0 rgba(252, 250, 245, 0.3);
+  color: #fcfaf5;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.session-links a:hover {
+  color: #e67642;
+  -webkit-box-shadow: 0 -1px 0 0 rgba(230, 118, 66, 0.3) inset, 0 2px 0 0 rgba(230, 118, 66, 0.3);
+          box-shadow: 0 -1px 0 0 rgba(230, 118, 66, 0.3) inset, 0 2px 0 0 rgba(230, 118, 66, 0.3);
+}
+
+.message-wr {
+  height: 75vh;
+  margin: auto;
+  width: 80vw;
+}
+
+.messages {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 5px #f4f2ed inset;
+          box-shadow: 0 0 0 5px #f4f2ed inset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 87%;
+  overflow: scroll;
+  padding: 20px;
+}
+
+.messages-table {
+  display: table;
+  width: 100%;
+}
+
+.message {
+  line-height: 1.6;
+  display: table-row;
+}
+
+.message:last-child {
+  margin-bottom: 10px;
+}
+
+.message > div {
+  display: table-cell;
+  padding: 13px 10px 10px;
+}
+
+.message-user {
+  color: #666;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.message-content {
+  width: 100%;
+}
+
+.message-input {
+  background-color: rgba(0, 0, 0, 0.03);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 13%;
+  padding: 0 5px 5px;
+}
+
+.message-input form {
+  height: 100%;
+}
+
+.message-input textarea {
+  height: 100%;
+  width: 100%;
+}
+
+.message-input input {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
