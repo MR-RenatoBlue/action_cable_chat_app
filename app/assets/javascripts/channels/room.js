@@ -1,4 +1,3 @@
-
 App.room = App.cable.subscriptions.create("RoomChannel", {
   connected: function() {
 
@@ -8,10 +7,9 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
 
   },
   received: function(data) {
-     if (data.content != null) {
-      $('#messages-table').append('<div class="message">' + '<div class="message-user">' 
-      + data.username + ":" + '</div>' + '<div class="message-content">' 
-      + data.content + '</div>' + '</div>');
+    if (data.mention){ alert("you have a new mention");}
+    if (data.message != null) {
+      $('#messages-table').append(data.message);
       scroll_bottom();
     }
   }
@@ -31,8 +29,8 @@ submit_message = function() {
     }
   });
 };
-
+//this function makes the autoscroll for the displayed messages
 scroll_bottom = function() {
-  let height = $('#messages')[0].scrollHeight
+  var height = $('#messages')[0].scrollHeight
   $('#messages').scrollTop(height);
 };
