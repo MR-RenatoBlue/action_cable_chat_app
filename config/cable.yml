@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: redis://:p89681d750977d6e44d3cf3a0989d6374bbdf062cebcf78ad675aa523692a7304@ec2-44-208-140-163.compute-1.amazonaws.com:26150
+  url: redis://:p89681d750977d6e44d3cf3a0989d6374bbdf062cebcf78ad675aa523692a7304@ec2-44-208-140-163.compute-1.amazonaws.com:26149
   password: p89681d750977d6e44d3cf3a0989d6374bbdf062cebcf78ad675aa523692a7304
